@@ -1,0 +1,11 @@
+group.id=logger_kafka_group2
+# How much of each thread processing data buffer
+log.parser.cache.size=1000
+# How many threads to process the data buffer on each partition
+log.parser.cache.threads=5
+# When processing thread runs out, the waiting time for receiving
+# unit: ms
+log.parser.cache.thread.waiting.ms=500
+use.metric=true
+metric.path=./metric/
+forwarder.id=forwarder
